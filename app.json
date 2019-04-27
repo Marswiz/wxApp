@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/toDoList/toDoList",
+    "pages/link/link",
+    "pages/link/random/random",
+    "pages/link/food/food",
+    "pages/link/thingList/thingList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "达达与海肠",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#eee"
+  },
+  "tabBar":{
+    "color": "#aaa",
+    "selectedColor": "#ff8c00",
+    "backgroundColor": "#fff",
+    "list":[
+      {
+        "pagePath": "pages/link/link",
+        "text": "噗噗噗噗噗",
+        "iconPath": "image/piSing.png",
+        "selectedIconPath": "image/piBrick.png"
+      },
+      {
+        "pagePath":"pages/toDoList/toDoList",
+        "text":"喵汪嘿",
+        "iconPath": "image/piLaugh.png",
+        "selectedIconPath": "image/piFist.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "滚回去",
+        "iconPath": "image/piLove.png",
+        "selectedIconPath":"image/piShoe.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 60000
+  },
+  "debug": true
+}

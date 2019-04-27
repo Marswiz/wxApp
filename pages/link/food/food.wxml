@@ -1,0 +1,16 @@
+<view id='box' style="width:{{screenWidth}}px;">
+  <view id='container' style="width:{{screenWidth}}px;">
+    <view id='row'>
+          <picker bindchange="foodPickerChange"  range='{{foodClass}}'  value='{{foodSelect}}'>
+            <view class='picker'> 
+              {{food[foodSelect].class}}
+            </view>
+          </picker>
+    </view>
+  </view>
+  <view id='container2' style="width:{{screenWidth}}px;">
+      <image id='images' src='../../../image/huawen1.png' mode='widthFix'></image>
+      <view id='list' wx:for="{{food[foodSelect].items}}">{{item}}</view>
+      <image id='images' src='../../../image/huawen2.png' mode='widthFix'></image>
+  </view>
+</view>

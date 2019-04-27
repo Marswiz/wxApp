@@ -1,0 +1,43 @@
+<view id="box" style="width:{{screenWidth}}px;">
+<view id="container" style="width:{{0.8*screenWidth}}px; margin-top:{{0.1*screenHeight}}px;">
+  <view id='row' wx:if="{{!resultShow}}">
+    <label class='label'>输入选项数目：</label><input id='itemNum' value='2' placeholder='选项数目' bindinput="numSet" type='number'></input>
+  </view>
+  <view id='row' wx:if="{{!resultShow}}">
+    <view id='itemsBox'>
+      <view style='font-size:0.7em;'>输入选项内容（以空格隔开）：</view>
+      <textarea id='items' bindinput='itemsSet' style="width:{{0.7*screenWidth}}px;" placeholder='选项内容（以空格间隔）'></textarea>
+      <view class="section">
+        <picker bindchange="boPickerChange" value="{{boIndex}}" range="{{boItems}}">
+          <view class="section_title">选择BO数：
+            <view class='picker' style='display:inline-block;'>
+              {{boItems[boIndex]}}
+            </view>
+          </view>          
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view id='row' wx:if="{{!resultShow}}">
+    <button id='submit' type='primary' size='small' bindtap='submit'>
+    确定
+    </button>
+  </view>
+  <view id='col' wx:if="{{resultShow}}">
+   <view id='row'>
+     <view id='result'>
+    骗子（有时候是上帝）说： 
+      <view style='margin:15px;'> 
+        你应该选择
+        <view class='result'>{{result}}</view>
+      </view>
+    </view>
+   </view>
+    <view id='row'>
+      <button type='primary'  id='choose' bindtap='toggleChoose'>就决定是你了！</button>
+    </view>
+    <view id='row' style='margin-top:10px;'>结果如下（误）: </view>
+    <view id='row' class='results'> {{resultArray}} </view>
+  </view>  
+</view>
+</view>

@@ -1,0 +1,92 @@
+/* pages/toDoList/toDoList.wxss */
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.listItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
+  padding-left: 15px;
+  background-color: #cdf93e;
+  overflow: hidden;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+#checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checked{
+  text-decoration: line-through;
+}
+.stripped1{
+  background-color: #fe4365;
+}
+.stripped2{
+  background-color: #fc9d9a;
+}
+.stripped3{
+  background-color: #f9cdad;
+}
+.stripped4{
+  background-color: #c8c8a9;
+}
+.stripped5{
+  background-color: #83af9b;
+}
+.stripped6{
+  background-color: #5096af;
+}
+.stripped7{
+  background-color: #96a0e6;
+}
+.toolbar{
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.editZone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#addList{
+  width: 75%;
+  height: 100%;
+  margin-left: 5px;
+  background-color: #ddd;
+  border-radius: 4px;
+  font-style: italic;
+}
+#addListBtn{
+  width:20%;
+  height: 100%;
+  text-align: center;
+}
+.modify{
+  width: 100%;
+  background-color: #ff8c00;
+  color: white;
+}
+button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}

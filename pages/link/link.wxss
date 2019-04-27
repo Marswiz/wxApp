@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.item-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.333333%;
+}
+
+.icon{
+  width: 60%;
+  height: 60%;
+  border-radius: 60%;
+}
+
+.text{
+  height: 20%;
+  margin: 8px 0px 3px 0px;
+  color: green;
+  font-size: 0.8em;
+}

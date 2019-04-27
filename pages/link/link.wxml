@@ -1,0 +1,44 @@
+<view class="container" style="height:{{screenHeight}}px;width:{{screenWidth}}px;">
+  <view class="item-row" style="height:{{1/3*screenWidth}}px;width:100%;">
+    <view class='item' id='callMars' bindtap='callMars'>
+      <image class='icon' src='../../image/1.jpg'></image>
+      <view class='text'>辣鸡没用功能1</view>
+    </view>
+    <view class='item' id='callDa' bindtap='callDa'>
+      <image class='icon' src='../../image/2.jpg'></image>
+      <view class='text'>辣鸡没用功能2</view>
+    </view>
+    <view class='item' bindtap='toRandom'>
+      <image class='icon' src='../../image/god.jpg'></image>
+      <view class='text'>听骗子说</view>
+    </view>
+  </view>
+  <view class="item-row" style="height:{{1/3*screenWidth}}px;width:100%;">
+    <view class='item' bindtap='toFood'>
+      <image class='icon' src='../../image/lotus.png'></image>
+      <view class='text'>人生·終極·問題</view>
+    </view>
+    <view class='item' bindtap='toList'>
+      <image class='icon' src='../../image/lvxing.png'></image>
+      <view class='text'>出差旅行List</view>
+    </view>
+    <view class='item'>
+      <image class='icon'></image>
+      <view class='text'></view>
+    </view>
+  </view>
+  <view class="item-row" style="height:{{1/3*screenWidth}}px;width:100%;">
+    <view class='item'>
+      <image class='icon'></image>
+      <view class='text'></view>
+    </view>
+    <view class='item'>
+      <image class='icon'></image>
+      <view class='text'></view>
+    </view>
+    <view class='item'>
+      <image class='icon'></image>
+      <view class='text'></view>
+    </view>
+  </view>
+</view>

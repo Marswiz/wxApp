@@ -1,0 +1,29 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.button-hover{
+  background-color: #ff8c00;
+  color:white;
+}
+text{
+  color: #aaa;
+}
+.create{
+  font-size: small;
+  font-style: italic;
+}
+
+image{
+  display: block;
+  width: 70%;
+  margin-top: 10px;
+}

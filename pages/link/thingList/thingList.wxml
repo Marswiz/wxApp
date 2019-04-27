@@ -1,0 +1,22 @@
+<view style="width:{{screenWidth}}px;">
+  <view id='box'>
+
+
+      <view id='selectBox'>
+        <view id='row'>
+          <picker id='picker' bindchange='changeList' range='{{lists}}'>
+            {{lists[listSelect]}}
+          </picker>        
+        </view>
+      </view>
+
+    
+    <view id='container'>
+      <view id='row'>
+        <checkbox id='list' wx:for='{{thingList[listSelect]}}'>
+        {{item}}
+        </checkbox>
+      </view>
+    </view>
+  </view>
+</view>

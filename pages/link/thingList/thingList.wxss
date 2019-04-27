@@ -1,0 +1,53 @@
+/* pages/link/thingList/thingList.wxss */
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#selectBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: lightskyblue;
+  margin: 30px 0px;
+}
+
+#container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+#row{
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+#picker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#list{
+  display: block;
+  text-align: left;
+  margin: 12px;
+  font-size: 1.2em;
+  color:#666666;
+  font-family: 'SimHei';
+}

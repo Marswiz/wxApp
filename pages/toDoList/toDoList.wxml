@@ -1,0 +1,19 @@
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="list" style="height:{{0.9*screenHeight}}px;">
+      <view wx:for="{{listItem}}"  wx:for-item = "item" wx:for-index = "index"> 
+        <view data-order="{{index}}" data-slided="0" class="listItem {{index%7===0?'stripped1':''}} {{index%7==1?'stripped2':''}} {{index%7==2?'stripped3':''}} {{index%7==3?'stripped4':''}} {{index%7==4?'stripped5':''}} {{index%7==5?'stripped6':''}} {{index%7==6?'stripped7':''}}" style="height:{{1/7*0.8*screenHeight}}px;" bindtouchmove="slideItem" bindtouchstart='slideStart' bindtouchend='slideEnd'>
+          <view id='content' class="{{item.checked?'checked':''}}">{{index}}. {{item.message}}</view>
+          <view id='checkbox'>
+            <checkbox data-num="{{index}}" checked="{{item.checked}}"  bindtap="check"></checkbox>
+          </view>
+        </view>
+      </view>
+</scroll-view>
+
+<!-- tool bar -->
+<view class='toolbar'>
+  <view class='editZone' style="height:{{0.1*screenHeight}}px;">
+    <input id="addList" type='text' placeholder='汪汪汪~' maxlength='-1'   bindinput='userInput' value="{{inputValue}}"></input>
+    <button id='addListBtn' type='primary' bindtap='submit'>汪w</button>
+  </view>
+  <!-- <button class='modify' style="height:{{0.1*screenHeight}}px;">S1tick Stick 哒ww</button> -->
+</view>
