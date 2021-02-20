@@ -1,0 +1,28 @@
+<view id="box" style="width:{{screenWidth}}px;height:{{screenHeight}}px;">
+  <view id='book' style='height:{{bookHeightWeight*screenHeight}}px;'>
+    <picker id='bookSelect' mode='selector' range='{{wordsLibPair}}' range-key='libName' bindchange='changeLib'><i class='fa fa-book'></i> {{libSelectedName}}</picker>
+  </view>
+  <image id='wordBoxBack' style='height:{{5*bookHeightWeight*screenHeight}}px;' src='./backPic.png'></image>
+  <view id='wordBox' style='height:{{4*bookHeightWeight*screenHeight}}px;'>
+    <view id='word' bindtap='changeWord'>
+      {{wordSelected['word']}}
+    </view>
+  </view>
+
+  <view id='itemBox' style='height:{{(1-5*bookHeightWeight)*screenHeight}}px;'>
+    <view class='item' bindtap='chooseItem' data-choosedItemNum='0' style='{{itemStyle[0]}}'>
+      <view class='itemTag' data-choosedItemNum='0'>A.</view> 
+      <view data-choosedItemNum='0'>{{items[0].wordMeaning}}</view>
+    </view>
+    <view class='item' bindtap='chooseItem'  data-choosedItemNum='1' style='{{itemStyle[1]}}'>
+      <view class='itemTag' data-choosedItemNum='1'>B.</view> 
+      <view data-choosedItemNum='1'>{{items[1].wordMeaning}}</view>
+    </view>    <view class='item' bindtap='chooseItem'  data-choosedItemNum='2' style='{{itemStyle[2]}}'>
+      <view class='itemTag' data-choosedItemNum='2'>C.</view> 
+      <view data-choosedItemNum='2'>{{items[2].wordMeaning}}</view>
+    </view>    <view class='item' bindtap='chooseItem'  data-choosedItemNum='3' style='{{itemStyle[3]}}'>
+      <view class='itemTag' data-choosedItemNum='3'>D.</view> 
+      <view data-choosedItemNum='3'>{{items[3].wordMeaning}}</view>
+    </view>
+  </view>
+</view>

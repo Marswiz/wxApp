@@ -1,0 +1,146 @@
+#shouquan{
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  border: none;
+  background-color: lightblue;
+}
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+#row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 90%;
+}
+
+#coupon2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+  /* background-image: linear-gradient(#e66465, #f5a8184d); */
+  background-image: linear-gradient(rgba(255,80,80,0.8) 0, rgba(245, 222, 179,0.8) 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.5em;
+}
+
+#coupon1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+  background-image: linear-gradient(rgba(121, 217, 255,0.8) 0, rgba(239, 250, 255,0.8) 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.5em;
+}
+
+#title{
+  font-weight: bold;
+  display: flex;
+  margin: 0.5em 20px 0.5em 10px;
+  flex-direction: row;
+  font-size: 1.3em;
+  justify-content: space-between;
+  align-items: flex-end;  
+}
+
+#couponNum{
+  font-size: 0.6em;
+}
+
+#couponContent{
+  margin: 1em 10px;
+  font-family: 'FangSong';
+  text-indent: 2em;
+}
+
+#couponOwner{
+  margin: 0 10px 5px 10px;
+}
+
+#createdAt{
+  margin: 10px 10px 0 10px;
+  font-size: 0.8em;
+  color: #4e4e4e;
+}
+
+#updatedAt{
+  margin: 0 10px 10px 10px;
+  font-size: 0.8em;
+  color: #4e4e4e;
+}
+
+#verifiedNum1{
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: dashed 1px white;  
+  color: white;
+  font-size: 0.7em;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+#verifiedNum2{
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: dashed 1px greenyellow;  
+  color: greenyellow;
+  font-size: 0.7em;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+#verifiedNum3{
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: dashed 1px white;  
+  color: white;
+  font-size: 0.7em;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+
+.burberry {
+  --white: rgba(255,255,255,0.6);
+  --black: rgba(0,0,0,0.55);
+  --red: rgba(200,40,35,0.7);
+  width: 100vw;
+  height: 100vh;
+  background-color: #dbbb94;
+  background-image:
+          linear-gradient(45deg, transparent 0, transparent 51%, var(--white) 0, var(--white) 57%, transparent 0, transparent 63%, var(--white) 0, var(--white) 69%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 41%, var(--white) 0, var(--white) 47%, transparent 0, transparent 53%, var(--white) 0,var(--white) 59%, transparent 0, transparent 100%),
+          linear-gradient(45deg, transparent 0, transparent 45%, var(--black) 0, var(--black) 75%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 35%, var(--black) 0, var(--black) 65%, transparent 0, transparent 100%),
+          linear-gradient(45deg, transparent 0, transparent 18%, var(--red) 0, var(--red)  21%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 11%, var(--red)  0, var(--red)  14%, transparent 0, transparent 89%, var(--red)  0, var(--red)  92%, transparent 0, transparent 100%);
+  background-blend-mode: normal;
+}

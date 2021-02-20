@@ -1,0 +1,24 @@
+<view id='box' class="burberry" style="width:{{screenWidth}}px;">
+  <view id='container' style="width:{{screenWidth}}px;">
+    <button open-type='getUserInfo' wx:if='{{id=="noID"}}' bindgetuserinfo="bindGetUserInfo" id='shouquan'>点击获取登录授权</button>
+    <view id='row' wx:if='{{id!="noID"}}' wx:for="{{coupons}}">
+      <view id='coupon{{item.couponOwnerID}}' wx:if='{{item.couponNum > 0}}' bindtap='couponUse' data-item='{{item}}' data-num='{{index}}'>
+        <view id='title'>
+          <view id='couponName'>{{item.couponName}}</view> 
+          <view id='couponNum'>
+            <span wx:if='{{item.verifiedNum!=0}}'> 剩余：</span>
+            <span wx:if='{{item.verifiedNum==0}}'> 待确认：</span>
+            {{item.couponNum}} 张
+          </view> 
+        </view>
+        <view id='verifiedNum2' wx:if='{{item.verifiedNum == 0 && ((item.couponOwner=="刘揣子"&&id=="Ｍars")|| (item.couponOwner=="姚大宝"&&id=="m.liu"))}}'  data-item='{{item}}' data-num='{{index}}' catchtap='verify'>× 未认证，单击此处进行认证后即刻生效</view>
+        <view id='verifiedNum1' wx:if='{{item.verifiedNum == 0 && ((item.couponOwner=="刘揣子"&&id=="m.liu")|| (item.couponOwner=="姚大宝"&&id=="Ｍars"))}}'  data-item='{{item}}' data-num='{{index}}'>× 此券未认证，等待对方确认</view>
+        <view id='verifiedNum3' wx:if='{{item.verifiedNum != 0}}'>★ 已认证，此券有效</view>
+        <view id='couponContent'>{{item.couponContent}}</view>    
+        <view id='couponOwner'>所有人：{{item.couponOwner}}</view>
+        <view id='createdAt' wx:if='{{item.verifiedNum != 0}}'>获取日期：{{item.createdAt}}</view>
+        <view id='updatedAt' wx:if='{{item.verifiedNum != 0}}'>上次使用：{{item.updatedAt}}</view>
+      </view>
+    </view>
+  </view>
+</view>

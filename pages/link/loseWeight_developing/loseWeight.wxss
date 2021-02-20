@@ -1,0 +1,155 @@
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  background-color: rgba(173, 216, 230, 0.671);
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+#date{
+  align-self: flex-start;
+  text-align: left;
+  margin: 10px 0;
+  font-weight: bold;
+  color: gray;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.titleItem{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 0.75em;  
+  color: black;
+}
+
+.item{
+  display: block;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 0.75em;
+  height: 2.5em;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#row{
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+}
+
+#btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addBtn{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ff8c00;
+  opacity: 0.8;
+  color: white;
+  font-size: 2em;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+#rmvBtn{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #0f8bff;
+  opacity: 0.8;
+  color: white;
+  font-size: 2em;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+#load{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #7df79bad;
+  opacity: 0.8;
+  color: white;
+  font-size: 1em;
+  height: 2.4em;
+
+}
+
+#save{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ff0037;
+  opacity: 0.6;
+  color: white;
+  font-size: 1em;
+  height: 2.4em;
+}
+
+.totalItems{
+  text-align: center;
+  width: 19%;
+}
+
+#total{
+  font-weight: bold;
+  display: flex;
+  /* justify-content: center;   */
+  align-self: flex-start;
+  margin: 10px 0;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+#standard{
+    font-weight: bold;
+  display: flex;
+  /* justify-content: center; */
+  align-self: flex-start;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+
+#tip{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  align-self: flex-start;
+  color: gray;
+  font-size: 0.8em;
+  margin: 5px 5px;
+}

@@ -1,0 +1,75 @@
+<view id="box" style="width:100vw;">
+<view id="container" style="width:95vw; margin-top:5vw;">
+  <view id='date'>
+    日期：
+    <picker mode='date' fields='day' value='{{date}}' style='display:inline-block;' bindchange='changeDate'>
+      <view>{{date}}</view>
+    </picker>
+  </view>
+  <view id='btns'>
+    <picker id='addBtn' mode='selector' range='{{foods}}' range-key='name' bindchange='addRow'>+</picker>
+    <button id='rmvBtn' bindtap='rmvRow'>-</button>
+    <button id='save' bindtap='save'>Save</button>
+  </view>
+  <view id='line' style='width:100%;margin:10px 0;border-top:1px dashed black;'></view>
+  <view id='title'>
+    <view class='titleItem'>食物名称</view>
+    <view class='titleItem'>蛋白(100g)</view>
+    <view class='titleItem'>碳水(100g)</view>
+    <view class='titleItem'>脂肪(100g)</view>
+    <view class='titleItem'>进食量(g)</view>
+  </view>
+  <view wx:for='{{rows}}'>
+    <view id='row'>
+      <input class='item' type='text' placeholder='{{item[1]}}'   data-pos1='{{item[0]}}' data-pos2='1' bindinput='change' value='{{item[1]}}'></input>
+      <input class='item' type='digit' placeholder='{{item[2]}}'  data-pos1='{{item[0]}}' data-pos2='2' bindinput='change' value='{{item[2]}}'></input>
+      <input class='item' type='digit' placeholder='{{item[3]}}'  data-pos1='{{item[0]}}' data-pos2='3' bindinput='change' value='{{item[3]}}'></input>
+      <input class='item' type='digit' placeholder='{{item[4]}}'  data-pos1='{{item[0]}}' data-pos2='4' bindinput='change' value='{{item[4]}}'></input>
+      <input class='item' type='digit' placeholder='{{item[5]}}'  data-pos1='{{item[0]}}' data-pos2='5' bindinput='change' value='{{item[5]}}'></input>
+    </view>
+  </view>
+  <view id='line' style='width:100%;margin:10px 0;border-top:1px dashed black;'></view>
+  <view id='standard'>
+  【标准】
+    <view id='totalPro' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{standard[0]}}</view>g
+    </view>
+    <view id='totalCab' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{standard[1]}}</view>g
+    </view>
+    <view id='totalFat' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{standard[2]}}</view>g
+    </view>
+  </view>
+  <view id='total'>
+  【已用】
+    <view id='totalPro' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{totalPro}}</view>g
+    </view>
+    <view id='totalCab' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{totalCab}}</view>g
+    </view>
+    <view id='totalFat' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline;'>{{totalFat}}</view>g
+    </view>
+  </view>
+  <view id='total'>
+  【剩余】
+    <view id='totalPro' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline; color:{{color[0]}}'>{{sheng[0]}}g</view>
+    </view>
+    <view id='totalCab' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline; color:{{color[1]}}'>{{sheng[1]}}g</view>
+    </view>
+    <view id='totalFat' class='totalItems' style='padding-right:10px'>
+      <view style='display:inline; color:{{color[2]}}'>{{sheng[2]}}g</view>
+    </view>
+  </view>
+  <view id='line' style='width:100%;margin:10px 0;border-top:1px dashed black;'></view>
+  <view id='tip' wx:for='{{tip}}'>
+     <view>{{item}}</view>  
+  </view>
+</view>
+</view>
+
+

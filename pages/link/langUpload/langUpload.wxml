@@ -1,0 +1,11 @@
+<view id="box" style="width:{{screenWidth}}px;height:{{screenHeight}}px;">
+  <view id='book' style='height:{{bookHeightWeight*screenHeight}}px;'>
+    <picker id='bookSelect' mode='selector' range='{{wordsLibPair}}' range-key='libName' bindchange='changeLib'><i class='fa fa-book'></i> {{libSelectedName}}</picker>
+  </view>
+  <image id='wordBoxBack' style='height:{{5*bookHeightWeight*screenHeight}}px;' src='../lang/backPic.png'></image>
+  <view id='wordBox' style='height:{{4*bookHeightWeight*screenHeight}}px;'>
+    <view id='word' bindtap='uploadWords'>
+      发挥神力吧！
+    </view>
+  </view>
+</view>

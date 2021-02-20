@@ -1,0 +1,52 @@
+/* pages/link/lang/lang.wxss */
+#box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #EEEEEF;
+  font-family: 'STZhongsong';
+  z-index: -1;
+}
+
+#book {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  z-index: 2;
+  width: 100%;
+  background-color: #EEEEEF;
+}
+
+#wordBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  width: 100%;
+  z-index: 2;
+}
+
+#wordBoxBack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#word {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ff7b00;
+  background-color: white;
+  box-shadow: 5px 5px rgb(83, 83, 83);
+  border-radius: 0.2em;
+  height: 40%;
+  padding: 0 1em;
+}
