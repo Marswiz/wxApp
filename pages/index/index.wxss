@@ -15,7 +15,7 @@
   color:white;
 }
 text{
-  color: #aaa;
+  color: gray;
 }
 .create{
   font-size: small;
@@ -24,6 +24,7 @@ text{
 
 image{
   display: block;
+  border-radius: 20px;
   width: 70%;
   margin-top: 10px;
 }

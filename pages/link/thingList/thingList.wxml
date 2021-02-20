@@ -10,12 +10,20 @@
         </view>
       </view>
 
-    
-    <view id='container'>
       <view id='row'>
-        <checkbox id='list' wx:for='{{thingList[listSelect]}}'>
-        {{item}}
+        <view bindtap='checkClear' style='color:tomato;'>
+        Clear
+        </view>
+      </view>
+
+    
+    <view id='container' >
+      <view id='row2' class="cornerFolded">
+        <hr class="hr"/>
+        <checkbox data-num='{{index}}' id='list' bindtap='check' wx:for='{{thingList[listSelect]}}' checked='{{checked[listSelect][index]}}'>
+          {{item}}
         </checkbox>
+        <hr class="hr"/>
       </view>
     </view>
   </view>

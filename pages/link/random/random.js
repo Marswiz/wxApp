@@ -7,7 +7,7 @@ const choosingAudio = wx.createInnerAudioContext();
 choosingAudio.autoplay = false;
 choosingAudio.loop = true;
 choosingAudio.obeyMuteSwitch = false;
-choosingAudio.src = "https://marswiz.com/audio/choosing.mp3";
+choosingAudio.src = "https://marswiz.com/assets/audio/choosing.mp3";
 console.log(choosingAudio.src);
 choosingAudio.onPlay(() => {
   console.log('Choosing 音乐播放中...');
@@ -22,7 +22,7 @@ const resultAudio1 = wx.createInnerAudioContext();
 resultAudio1.autoplay = false;
 resultAudio1.loop = false;
 resultAudio1.obeyMuteSwitch = false;
-resultAudio1.src = "https://marswiz.com/audio/result_normal.mp3";
+resultAudio1.src = "https://marswiz.com/assets/audio/result_normal.mp3";
 console.log(resultAudio1.src);
 resultAudio1.onPlay(() => {
   console.log('Choosing 音乐播放中...');
@@ -37,7 +37,7 @@ const resultAudio2 = wx.createInnerAudioContext();
 resultAudio2.autoplay = false;
 resultAudio2.loop = false;
 resultAudio2.obeyMuteSwitch = false;
-resultAudio2.src = "https://marswiz.com/audio/result_end.mp3";
+resultAudio2.src = "https://marswiz.com/assets/audio/result_end.mp3";
 console.log(resultAudio1.src);
 resultAudio2.onPlay(() => {
   console.log('Choosing 音乐播放中...');

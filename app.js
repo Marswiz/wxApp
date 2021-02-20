@@ -1,8 +1,10 @@
 //app.js
+
 App({
-  onLaunch: function () {   
+  onLaunch: function () {
   },
   globalData: {
-    ver: "1.8.0"
+    ver: "2.4.2"
   }
-})
+});
+

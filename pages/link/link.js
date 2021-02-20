@@ -15,7 +15,7 @@ Page({
   onLoad: function (options) {
     let a,b;
     wx.setNavigationBarTitle({
-      title: '小连线'
+      title: '刘揣子噗噗'
     })
     var screenHeight = wx.getSystemInfo({
       success: function (res) {
@@ -29,9 +29,9 @@ Page({
     });
   },
 
-  callMars:function(){
-    wx.makePhoneCall({
-      phoneNumber: this.data.marsPhoneNum
+  goCoupons:function(){
+    wx.navigateTo({
+      url: './coupons/coupons'
     });
   },
 
@@ -59,4 +59,25 @@ Page({
     });
 
   },
+  toWeight: function () {
+    wx.navigateTo({
+      url: './loseWeight_developing/loseWeight'
+    });
+
+  },
+  toLang: function () {
+    wx.navigateTo({
+      url: './lang/lang'
+    });
+
+  },
+
+  toLangUpload: function () {
+    wx.navigateTo({
+      url: './langUpload/langUpload'
+    });
+
+  }
+
+  
 })

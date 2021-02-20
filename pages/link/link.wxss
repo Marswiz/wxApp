@@ -1,10 +1,20 @@
 .container{
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+}
+
+#backPic {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .item-row{
@@ -28,11 +38,52 @@
   width: 60%;
   height: 60%;
   border-radius: 60%;
+  border: 4px solid white;
+  box-shadow: 3px 4px rgb(61, 61, 61);
 }
 
 .text{
   height: 20%;
   margin: 8px 0px 3px 0px;
-  color: green;
+  color: floralwhite;
+  font-family: Helvetica, sans-serif;
   font-size: 0.8em;
+  font-weight: bold;
 }
+
+.burberry {
+  --white: rgba(255,255,255,0.6);
+  --black: rgba(0,0,0,0.55);
+  --red: rgba(200,40,35,0.7);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #dbbb94;
+  background-image:
+          linear-gradient(45deg, transparent 0, transparent 51%, var(--white) 0, var(--white) 57%, transparent 0, transparent 63%, var(--white) 0, var(--white) 69%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 41%, var(--white) 0, var(--white) 47%, transparent 0, transparent 53%, var(--white) 0,var(--white) 59%, transparent 0, transparent 100%),
+          linear-gradient(45deg, transparent 0, transparent 45%, var(--black) 0, var(--black) 75%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 35%, var(--black) 0, var(--black) 65%, transparent 0, transparent 100%),
+          linear-gradient(45deg, transparent 0, transparent 18%, var(--red) 0, var(--red)  21%, transparent 0, transparent 100%),
+          linear-gradient(-45deg, transparent 0, transparent 11%, var(--red)  0, var(--red)  14%, transparent 0, transparent 89%, var(--red)  0, var(--red)  92%, transparent 0, transparent 100%);
+  background-blend-mode: normal;
+  z-index: 0;
+}
+
+/* 实现模糊效果（毛玻璃） ， 需要把上面的原始background-image去掉 */
+/* 
+.burberry::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom:0; right: 0;
+  background: linear-gradient(45deg, transparent 0, transparent 51%, var(--white) 0, var(--white) 57%, transparent 0, transparent 63%, var(--white) 0, var(--white) 69%, transparent 0, transparent 100%),
+  linear-gradient(-45deg, transparent 0, transparent 41%, var(--white) 0, var(--white) 47%, transparent 0, transparent 53%, var(--white) 0,var(--white) 59%, transparent 0, transparent 100%),
+  linear-gradient(45deg, transparent 0, transparent 45%, var(--black) 0, var(--black) 75%, transparent 0, transparent 100%),
+  linear-gradient(-45deg, transparent 0, transparent 35%, var(--black) 0, var(--black) 65%, transparent 0, transparent 100%),
+  linear-gradient(45deg, transparent 0, transparent 18%, var(--red) 0, var(--red)  21%, transparent 0, transparent 100%),
+  linear-gradient(-45deg, transparent 0, transparent 11%, var(--red)  0, var(--red)  14%, transparent 0, transparent 89%, var(--red)  0, var(--red)  92%, transparent 0, transparent 100%);
+  overflow: hidden;
+  filter: blur(4px);
+  margin: -5px;
+  z-index: -1;
+} */

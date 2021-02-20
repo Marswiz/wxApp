@@ -23,6 +23,22 @@
   flex-direction: column;
   align-items: center;
   overflow: scroll;
+  width: 100%;
+}
+
+#row2{
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  flex-direction: column;
+  overflow: scroll;
+  /* width: 100%; */
+}
+
+.hr {
+  width: 100%;
+  margin: 2em 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.6);
 }
 
 #row{
@@ -50,4 +66,33 @@
   font-size: 1.2em;
   color:#666666;
   font-family: 'SimHei';
+}
+
+checkbox[checked]{
+  text-decoration: line-through;
+}
+
+
+.cornerFolded {
+  --mainColor: #ddd;
+  --cornerColor: rgba(0,0,0,0.1);
+  --deg: 30deg;
+  position: relative;
+  padding: 4em;
+  background-image: linear-gradient( calc(var(--deg) - 180deg), transparent 0, transparent 2em, var(--mainColor) 0);
+  border-radius: 0.8em;
+  margin: 10px 10px;
+  box-shadow: 0px 8px 6px -6px rgba(0,0,0,0.5);
+}
+
+.cornerFolded:before {
+  position: absolute;
+  top: 0; right: 0;
+  content: '';
+  background: linear-gradient(to left bottom, transparent 0, transparent 50%, var(--cornerColor) 0) no-repeat;
+  width: 4em;
+  height: 2.31em;
+  border-bottom-left-radius: 0.8em;
+  transform: rotateY(180deg) rotateZ( calc(var(--deg) - 90deg) );
+  box-shadow: -6px 4px 6px -3px rgba(0,0,0,0.5);
 }
