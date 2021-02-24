@@ -28,3 +28,27 @@ image{
   width: 70%;
   margin-top: 10px;
 }
+
+
+@keyframes loadingStep {
+  to {
+      background-position: -800px;
+  }
+}
+
+#loading {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+#flower {
+  height: 100px;
+  width: 100px;
+  background: url("https://marswiz.com/assets/pics/flower.png") 0 0;
+  filter: drop-shadow(0px 0px 3px lightgray);
+  animation: loadingStep 1s steps(8) infinite;
+}

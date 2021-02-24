@@ -1,4 +1,7 @@
 <!--index.wxml-->
+<view id="loading" style="display:{{loading}};">
+    <view id="flower"></view>
+</view>
 <view class="container" style="height:{{screenHeight}}px;">
   <view class='title'>
     <text style='font-weight:bold;'>达达与海肠 App</text>

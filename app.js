@@ -4,7 +4,7 @@ App({
   onLaunch: function () {
   },
   globalData: {
-    ver: "2.4.2"
+    ver: "2.4.3"
   }
 });
 

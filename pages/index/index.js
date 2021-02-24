@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    ver: app.globalData.ver
+    ver: app.globalData.ver,
+    loading: 'flex',
   },
   onLoad: function(){
     let a, b;
@@ -21,6 +22,9 @@ Page({
       screenHeight: a,
       screenWidth: b
     });
+    setTimeout(()=>{this.setData({
+      loading: 'none',
+    });}, 1000);
   },
   show: function(){
     wx.getLocation({
