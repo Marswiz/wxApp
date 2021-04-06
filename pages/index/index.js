@@ -6,9 +6,12 @@ Page({
   data: {
     ver: app.globalData.ver,
     loading: 'flex',
+    typeLength: 0,
+    info: 'Created at 20170906 3:33 By Mars',
   },
   onLoad: function(){
     let a, b;
+    let query = wx.createSelectorQuery();
     wx.setNavigationBarTitle({
       title: '达达与海肠'
     })
@@ -22,9 +25,16 @@ Page({
       screenHeight: a,
       screenWidth: b
     });
+    
     setTimeout(()=>{this.setData({
       loading: 'none',
     });}, 1000);
+
+    console.log(query.select('.type'));
+    this.setData({
+      typeLength: query.select('.type').text
+    });
+
   },
   show: function(){
     wx.getLocation({

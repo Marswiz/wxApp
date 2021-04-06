@@ -6,7 +6,7 @@
   <view class='title'>
     <text style='font-weight:bold;'>达达与海肠 App</text>
     <text>\n Ver {{ver}}</text>
-    <text class='create'>\n Created at 20170906 3:33 By Mars</text>
+    <text class='create type' style="width:{{info.length}}ch; animation-timing-function: steps({{info.length}});">{{info}}</text>
   </view>
   <view class='title'>
   <image src='../../image/da1.jpg' mode='widthFix'></image>
